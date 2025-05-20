@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Projetinho</string>
+    <string name="nomeString" />
+    <string name="nova" />
+    <string name="remover">X</string>
+    <string-array name="tipos_produto">
+        <item>Carnes</item>
+        <item>Arroz</item>
+        <item>Feijão</item>
+        <item>Macarrão</item>
+        <item>Outros</item>
+    </string-array>
+</resources>

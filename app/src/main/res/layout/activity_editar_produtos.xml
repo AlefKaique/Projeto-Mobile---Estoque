@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditarProdutosActivity">
+
+    <!-- Top Bar -->
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="310dp"
+        android:layout_height="516dp"
+        android:background="#FFFFFF"
+        android:backgroundTint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.574"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.61">
+
+        <!-- Campo Código de Barras -->
+        <EditText
+            android:id="@+id/editCodigoBarras"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="50dp"
+            android:ems="10"
+            android:hint="Código de Barras"
+            android:inputType="number"
+            android:maxLength="13"
+            android:minHeight="48dp"
+            android:imeOptions="actionDone"
+            android:singleLine="true"/>
+
+        <!-- Demais campos desativados -->
+        <EditText
+            android:id="@+id/editDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:layout_marginStart="50dp"
+            android:ems="10"
+            android:hint="Descrição"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:enabled="false" />
+
+        <EditText
+            android:id="@+id/editPreco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="140dp"
+            android:layout_marginStart="50dp"
+            android:ems="10"
+            android:hint="Preço"
+            android:inputType="number|numberDecimal"
+            android:minHeight="48dp"
+            android:enabled="false" />
+
+        <EditText
+            android:id="@+id/editMarca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200dp"
+            android:layout_marginStart="50dp"
+            android:ems="10"
+            android:hint="Marca"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:enabled="false" />
+
+        <EditText
+            android:id="@+id/editQtd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="260dp"
+            android:layout_marginStart="50dp"
+            android:ems="10"
+            android:hint="Quantidade"
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:enabled="false" />
+
+        <Spinner
+            android:id="@+id/spinnerTipos"
+            android:layout_width="140dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="320dp"
+            android:layout_marginStart="80dp"
+            android:enabled="false" />
+
+        <!-- Botões centralizados lado a lado -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="390dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btCadastro"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#282121"
+                android:text="Alterar"
+                android:textColor="#FFFFFF"
+                android:enabled="false" />
+
+            <Space
+                android:layout_width="16dp"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btExcluir"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#B00020"
+                android:text="Excluir"
+                android:textColor="#FFFFFF"
+                android:enabled="false" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="411dp"
+        android:layout_height="50dp"
+        android:background="#FFFFFF"
+        android:backgroundTint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.057"
+        tools:ignore="MissingConstraints" />
+
+    <!-- Título -->
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hydra"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/divider2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.073" />
+
+    <!-- Botão Voltar -->
+    <ImageButton
+        android:id="@+id/btVoltar"
+        android:layout_width="62dp"
+        android:layout_height="50dp"
+        android:background="#FFFFFF"
+        android:contentDescription=" "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/divider2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.057"
+        app:srcCompat="@drawable/icon__2_"
+        tools:ignore="MissingConstraints,TouchTargetSize" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
