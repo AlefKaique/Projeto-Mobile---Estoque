@@ -10,5 +10,11 @@ data class ConsultaResponse(
     val codigo_barras: String,
 
     @SerializedName("CP_Qtd")
-    val quantidade: Int
+    val quantidade: Int,
+
+    @SerializedName("CP_Preco")
+    val preco: Double,
+
+    @SerializedName("CP_Marca")
+    val marca: String
 )

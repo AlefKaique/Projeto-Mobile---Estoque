@@ -48,6 +48,7 @@ class VendasActivity : AppCompatActivity() {
         adapter = VendasAdapter(listaItens) { item ->
             listaItens.removeAt(item)
             adapter.notifyDataSetChanged()
+            atualizarValorTotal()
         }
         recyclerView.layoutManager = LinearLayoutManager(this)
         recyclerView.adapter = adapter

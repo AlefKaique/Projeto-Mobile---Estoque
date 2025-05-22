@@ -16,6 +16,8 @@ class ConsultaAdapter(
         val nome: TextView = view.findViewById(R.id.tvNome)
         val codigo: TextView = view.findViewById(R.id.tvCodigo)
         val quantidade: TextView = view.findViewById(R.id.tvQuantidade)
+        val preco: TextView = view.findViewById(R.id.tvPreco)
+        val marca: TextView = view.findViewById(R.id.tvMarca)
         val botaoRemover: ImageButton = view.findViewById(R.id.buttonRemover)
     }
 
@@ -30,6 +32,8 @@ class ConsultaAdapter(
         holder.nome.text = produto.nome
         holder.codigo.text = produto.codigo_barras
         holder.quantidade.text = produto.quantidade.toString()
+        holder.preco.text = "R$ %.2f".format(produto.preco)
+        holder.marca.text = produto.marca
 
         holder.botaoRemover.setOnClickListener {
             onItemRemover(position)

@@ -8,32 +8,77 @@
     android:padding="8dp">
 
     <LinearLayout
-        android:layout_width="0dp"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <!-- Nome -->
+        <TextView
+            android:id="@+id/tvNomeLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nome:"
+            android:textStyle="bold"/>
 
         <TextView
             android:id="@+id/tvNome"
             android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <!-- Código de barras -->
+        <TextView
+            android:id="@+id/tvCodigoLabel"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Nome do Produto"
-            android:textSize="16sp"
-            android:textStyle="bold" />
+            android:text="Código de barras:"
+            android:textStyle="bold"/>
 
         <TextView
             android:id="@+id/tvCodigo"
             android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <!-- Quantidade -->
+        <TextView
+            android:id="@+id/tvQuantidadeLabel"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Código de Barras"
-            android:textSize="14sp" />
+            android:text="Quantidade:"
+            android:textStyle="bold"/>
 
         <TextView
             android:id="@+id/tvQuantidade"
             android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <!-- Preço -->
+        <TextView
+            android:id="@+id/tvPrecoLabel"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Quantidade"
-            android:textSize="14sp" />
+            android:text="Preço:"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tvPreco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <!-- Marca -->
+        <TextView
+            android:id="@+id/tvMarcaLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Marca:"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tvMarca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
     </LinearLayout>
 
     <ImageButton
